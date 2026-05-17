@@ -46,7 +46,7 @@ helm upgrade --install couponhub dihrepo/xap-pu --version 17.0.1-patch-b-1 -f Co
 ``` 
 
 ### Transaction-data-pipeline.yml 
-Exercise: Add #promo type to appear in DIH space 
+- **Exercise:** Add #promo type to DIH space
 
 ### Install Pluggable Connector
 ```sh
@@ -59,7 +59,7 @@ helm install bbw-pc dihrepo/pluggable-connector --version 17.0.1 --values Config
 ```
 
 ### Implement getTransactions method:
-Implement getTransactions method in coupon-hub-api/src/main/java/com/bbw/coupon/hub/controller/SpaceController.java to retrieve all Transaction type records
+- **Exercise:** Implement getTransactions method in coupon-hub-api/src/main/java/com/bbw/coupon/hub/controller/SpaceController.java to retrieve all Transaction type records
 
 ### Coupon-hub-api build
 ```sh
