@@ -136,38 +136,6 @@ spaceTypes:
       - name: "lastUpdatedTS"
         type: "java.lang.Long"
         selector: ".lastUpdatedTS"
-        
-  #promos
-  - name: "Promos"
-    dataSource:
-      topic: "bbw_eai.hub.transaction.realtime.topic"
-      selector: "$.Promo[*]"
-    tiering: warm-only
-    properties:
-      - name: "transactionId"
-        type: "java.lang.String"
-        selector: "$.Transaction.transactionId"  # rootLevel transactionId
-        attributes: [ spaceid, routingkey ]
-      - name: "lineSequence"
-        type: "java.lang.Integer"
-        selector: ".lineSequence"
-        attributes: [ spaceid ]
-      - name: "promoSequence"
-        type: "java.lang.Integer"
-        selector: ".promoSequence"
-        attributes: [ spaceid ]
-      - name: "promoSetId"
-        type: "java.lang.String"
-        selector: ".promoSetId"
-      - name: "promoDesc"
-        type: "java.lang.String"
-        selector: ".promoDesc"
-      - name: "couponId"
-        type: "java.lang.String"
-        selector: ".couponId"
-      - name: "isReward"
-        type: "java.lang.Boolean"
-        selector: ".isReward"
 
   #TransactionByCid
   - name: "TransactionByCid"
@@ -242,3 +210,5 @@ spaceTypes:
       - name: "actualTimestampUTC"
         type: "java.lang.Long"
         selector: ".actualTimestampUTC"
+
+        # ADD promos
