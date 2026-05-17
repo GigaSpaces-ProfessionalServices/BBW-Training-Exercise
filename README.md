@@ -45,6 +45,8 @@ nohup kubectl port-forward --address 0.0.0.0 svc/cp-kafka-rest 8082:8082 -n dih 
 helm upgrade --install couponhub dihrepo/xap-pu --version 17.0.1-patch-b-1 -f ConfigFiles/xap-pu-ts.yaml --namespace dih
 ``` 
 
+### Transaction-data-pipeline.yml 
+Exercise: Add #promo type to appear in DIH space 
 
 ### Install Pluggable Connector
 ```sh
@@ -55,6 +57,9 @@ helm install bbw-pc dihrepo/pluggable-connector --version 17.0.1 --values Config
 ```sh
 ./scripts/load_data.sh
 ```
+
+### Implement getTransactions method:
+Implement getTransactions method in coupon-hub-api/src/main/java/com/bbw/coupon/hub/controller/SpaceController.java to retrieve all Transaction type records
 
 ### Coupon-hub-api build
 ```sh

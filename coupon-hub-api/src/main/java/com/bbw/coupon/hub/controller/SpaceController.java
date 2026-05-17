@@ -16,8 +16,8 @@ public class SpaceController {
 
     @GetMapping("/transactions")
     public SpaceDocument[] getTransactions() {
-        SpaceDocument searchTemplate = new SpaceDocument("Transaction");
-        SpaceDocument[] transactions = couponsSpace.readMultiple(searchTemplate);
+        //Implement transactions
+        SpaceDocument[] transactions = null;
         return transactions;
     }
 }
