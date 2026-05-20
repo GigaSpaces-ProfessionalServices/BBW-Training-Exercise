@@ -7,11 +7,6 @@
 kubectl create ns dih
 ```
 
-### Docker repos secret
-```sh
-kubectl create secret docker-registry myregistrysecret --docker-server=https://index.docker.io/v1/ --docker-username=dihcustomers --docker-password=<Password> --docker-email=dih-customers@gigaspaces.com --namespace dih 
-```
-
 ### DIH repo
 ```sh
 helm repo add dihrepo https://s3.amazonaws.com/resources.gigaspaces.com/helm-charts-dih
